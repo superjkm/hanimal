@@ -1,0 +1,22 @@
+Todos:
+
+x make blank spaces
+x don't show current guess in seen
+x guess's correct:
+    x fill in blank spaces with letters
+    x don't update animal
+x layout rects
+x You won 
+x Wrong guess
+x You guessed that before
+x please hit a letter
+x lose
+label fields/make rects around things 
+resize drawings
+stop entering keys after win
+
+add additional animals
+
+
+optimize image renders
+let user know how many guesses they have left
