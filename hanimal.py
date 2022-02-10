@@ -58,7 +58,9 @@ def main():
     # some vars
     running = True
     seen = []
-    word = 'cat'
+    words = ['cat', 'sheep', 'dog']
+    import random
+    word =  random.choice(words)
     white = (255, 255, 255)
     red = (255, 0, 0)
     green = (0, 255, 0)
@@ -129,7 +131,7 @@ def main():
                             img = pygame.image.load(f"{guess}.png")
                             screen.blit(img, ((150*index),450))
                             # display the animal
-                            animal = pygame.image.load(f"{index}.png")
+                            animal = pygame.image.load(f"{word}-{index}.png")
                             screen.blit(animal, (0, 0))
                         if index == 10:
                             screen.blit(lose, (450, 50))
