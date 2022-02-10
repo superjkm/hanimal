@@ -7,10 +7,16 @@
 
 # documentation string of this module
 """
-tutorial pygame program.
+What is it?
+Like hangman, only instead of a man, it's an animal, and it's the word. The goal is to get the guess to guess the right animal and fill in the blanks with the right letters.
+
+How do I play it? 
+
+python3 hanimal.py 
+
 """
 # some informational variables
-__author__    = "$Author: jcoe $"
+__author__    = "$Author: joce $"
 __version__   = "$Revision: 101 $"
 __date__      = "$Date: 2022-02-06 08:00:40 +0200 (Di, 06 Feb 2022) $"
 __license__   = ''
