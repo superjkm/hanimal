@@ -78,12 +78,12 @@ def main():
     def display_word(guessed, word):
         number_of_blanks = len(word)
         number_filled_in = 0
-        blank = pygame.image.load("blank.png")
+        blank = pygame.image.load("images/blank.png")
         for index in range(number_of_blanks):
             if word[index] not in guessed:
                 screen.blit(blank, ((index * 150),600))
             else:
-                letter = pygame.image.load(f"{word[index]}.png")
+                letter = pygame.image.load(f"images/{word[index]}.png")
                 screen.blit(letter, ((index * 150),600))
                 number_filled_in += 1
         if number_filled_in == number_of_blanks:
@@ -108,7 +108,7 @@ def main():
                 print(f"the key pressed was: {key}")
                 if key in "abcdefghijklmnopqrstuvwxyz":
                     # display the current guess
-                    letter = pygame.image.load(f"{key}.png")
+                    letter = pygame.image.load(f"images/{key}.png")
                     screen.blit(letter, (0,300))
 
                     if key not in word:
@@ -128,10 +128,10 @@ def main():
                         # display previous guesses
                         print(f"guess: {guess}, seen: {seen}, {guess in misses}")
                         if index < 10:
-                            img = pygame.image.load(f"{guess}.png")
+                            img = pygame.image.load(f"images/{guess}.png")
                             screen.blit(img, ((150*index),450))
                             # display the animal
-                            animal = pygame.image.load(f"{word}-{index}.png")
+                            animal = pygame.image.load(f"images/{word}-{index}.png")
                             screen.blit(animal, (0, 0))
                         if index == 10:
                             screen.blit(lose, (450, 50))
